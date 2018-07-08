@@ -1,0 +1,6 @@
+#Ignore virtualenv
+venv/
+
+#Ignore editor specific files
+.vimrc
+.vscode/
