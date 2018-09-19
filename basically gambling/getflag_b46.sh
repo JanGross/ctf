@@ -5,7 +5,7 @@ while :;
 do
     echo "Attempt ${ATTEMPT}..."
     ATTEMPT=$[ATTEMPT + 1]
-    RESULT=$(nc localhost 6667 | base64 -d | strings | grep "MNZ{")
+    RESULT=$(nc ctf.minzkraut.com 6646 -w2 | base64 -d | strings | grep "MNZ{")
     if [[ $RESULT ]]; then
         echo "Found the flag"
         echo $RESULT
