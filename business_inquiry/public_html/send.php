@@ -1,5 +1,5 @@
 <?php
-$contact = replace("..", "", $_POST["contact"]);
+$contact = str_replace("..", "", $_POST["contact"]);
 $recipient = $_POST['mail'];
 $msg  = "Thank you for contacting LoremCorp.\n<br>";
 $msg .= "The contact you selected will get back to you as sool as possible.\n<br>";
